@@ -1,0 +1,21 @@
+es:
+  activerecord:
+    models:
+      country_political_division:
+        one: "División política del país"
+        other: "Divisiones políticas del país"
+    attributes:
+      country_political_division:
+        country: "País"
+        country_political_division_type: "Tipo de división"
+        higher_country_political_division: "División superior"
+        code: "Código"
+        name_en: "Nombre (inglés)"
+        name_es: "Nombre (español)"
+    errors:
+      models:
+        country_political_division:
+          attributes:
+            base:
+              country_relations_not_match: "Alguna relación tiene un país distinto"
+              higher_country_political_division_type_relations_not_match: "Los tipos de división política superior no coinciden"

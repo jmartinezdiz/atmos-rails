@@ -1,0 +1,5 @@
+es:
+  views:
+    app:
+      title: "Atmos"
+      description: "Tu aplicación de pronóstico del tiempo"

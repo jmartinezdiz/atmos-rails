@@ -1,0 +1,154 @@
+.country_political_divisions-forecast {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.country_political_divisions-forecast h2 {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.country_political_divisions-forecast .forecast-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.country_political_divisions-forecast .forecast-navigation h2 {
+  margin-bottom: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.country_political_divisions-forecast .nav-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #6d84e9;
+  transition: all 0.2s ease;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+}
+
+.country_political_divisions-forecast .nav-arrow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(109, 132, 233, 0.2);
+  border-color: #6d84e9;
+  color: #5a73e8;
+  background-color: #fcfdff;
+}
+
+.country_political_divisions-forecast .nav-arrow img {
+  width: 24px;
+  height: 24px;
+}
+
+.country_political_divisions-forecast .forecast-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.country_political_divisions-forecast .forecast-card {
+  flex: 0 1 180px;
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #eee;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.country_political_divisions-forecast .forecast-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  border-color: #667eea;
+  z-index: 10;
+}
+
+.country_political_divisions-forecast .forecast-card.selected {
+  border: 2px solid #667eea;
+  background-color: #fcfdff;
+  box-shadow: 0 8px 15px rgba(102, 126, 234, 0.2);
+}
+
+.country_political_divisions-forecast .forecast-header {
+  text-align: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+  width: 100%;
+}
+
+.country_political_divisions-forecast .forecast-day-name {
+  color: #667eea;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+
+.country_political_divisions-forecast .forecast-date {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.country_political_divisions-forecast .forecast-body {
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.country_political_divisions-forecast .forecast-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.country_political_divisions-forecast .forecast-row > span:last-child {
+  text-align: right;
+}
+
+.country_political_divisions-forecast .forecast-label {
+  color: #555;
+  font-weight: 500;
+}
+
+.country_political_divisions-forecast .temperature-max {
+  color: #e74c3c;
+  font-weight: 700;
+}
+
+.country_political_divisions-forecast .temperature-min {
+  color: #3498db;
+  font-weight: 700;
+}
+
+.country_political_divisions-forecast .forecast-value {
+  color: #333;
+  font-weight: 600;
+}
+
+.country_political_divisions-forecast .no-data {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 15px 0;
+}

@@ -1,0 +1,17 @@
+spain_comunidad:
+  country: spain
+  name_en: Autonomous Community
+  name_es: Comunidad Autónoma
+  higher_country_political_division_type: null
+
+spain_provincia:
+  country: spain
+  name_en: Province
+  name_es: Provincia
+  higher_country_political_division_type: spain_comunidad
+
+spain_municipio:
+  country: spain
+  name_en: Municipality
+  name_es: Municipio
+  higher_country_political_division_type: spain_provincia

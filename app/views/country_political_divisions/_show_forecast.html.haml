@@ -1,0 +1,45 @@
+- end_date = start_date + 6.days
+- range = start_date..end_date
+- rain_forecasts = country_political_division.rain_forecasts.where(date: range).index_by(&:date)
+- temperatures_forecasts = country_political_division.temperatures_forecasts.where(date: range).index_by(&:date)
+- wind_forecasts = country_political_division.wind_forecasts.where(date: range).index_by(&:date)
+- previous_link = political_division_country_path(country_political_division.country, political_division_id: country_political_division, start_date: start_date - 7.days, anchor: "forecast")
+- next_link = political_division_country_path(country_political_division.country, political_division_id: country_political_division, start_date: start_date + 7.days, anchor: "forecast")
+
+#forecast.country_political_divisions-forecast
+  .forecast-navigation
+    = link_to previous_link, class: "nav-arrow", aria: { label: I18n.t("views.country_political_divisions.show_forecast.previous_week") } do
+      = image_tag "/icons/chevron-left.svg", alt: I18n.t("views.country_political_divisions.show_forecast.previous_week")
+    %h2= I18n.t("views.country_political_divisions.show_forecast.title")
+    = link_to next_link, class: "nav-arrow", aria: { label: I18n.t("views.country_political_divisions.show_forecast.next_week") } do
+      = image_tag "/icons/chevron-right.svg", alt: I18n.t("views.country_political_divisions.show_forecast.next_week")
+
+  .forecast-grid
+    - range.each do |date|
+      - rain = rain_forecasts[date]
+      - temperature = temperatures_forecasts[date]
+      - wind = wind_forecasts[date]
+      .forecast-card{class: ("selected" if date == Date.today)}
+        .forecast-header
+          .forecast-day-name= I18n.l(date, format: "%A")
+          .forecast-date= I18n.l(date, format: I18n.t("views.country_political_divisions.show_forecast.date_format"))
+        .forecast-body
+          - if temperature
+            .forecast-row
+              %span.forecast-label= I18n.t("views.country_political_divisions.show_forecast.max_temperature")
+              %span
+                %span.temperature-max= "#{temperature.max_value} #{temperature.measurement_unit}"
+            .forecast-row
+              %span.forecast-label= I18n.t("views.country_political_divisions.show_forecast.min_temperature")
+              %span
+                %span.temperature-min= "#{temperature.min_value} #{temperature.measurement_unit}"
+          - if rain
+            .forecast-row
+              %span.forecast-label= I18n.t("views.country_political_divisions.show_forecast.rain")
+              %span.forecast-value= "#{rain.value} #{rain.measurement_unit}"
+          - if wind
+            .forecast-row
+              %span.forecast-label= I18n.t("views.country_political_divisions.show_forecast.wind")
+              %span.forecast-value= "#{wind.value} #{wind.measurement_unit}"
+          - if !temperature && !rain && !wind
+            .no-data= I18n.t("views.country_political_divisions.show_forecast.no_data")

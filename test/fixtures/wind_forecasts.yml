@@ -1,0 +1,11 @@
+one:
+  country_political_division: madrid_provincia
+  date: <%= Date.today %>
+  measurement_unit: km/h
+  value: 15.5
+
+two:
+  country_political_division: madrid_provincia
+  date: <%= Date.tomorrow %>
+  measurement_unit: km/h
+  value: 20.0

@@ -1,0 +1,15 @@
+es:
+  views:
+    errors:
+      bad_request:
+        title: "Solicitud incorrecta"
+        description: "El servidor no puede procesar la solicitud debido a un error del cliente."
+      forbidden:
+        title: "Prohibido"
+        description: "No tienes permiso para acceder a este recurso."
+      not_found:
+        title: "Página no encontrada"
+        description: "La página que buscas no existe."
+      internal_error:
+        title: "Error interno del servidor"
+        description: "Algo salió mal de nuestro lado. Por favor, inténtalo de nuevo más tarde."

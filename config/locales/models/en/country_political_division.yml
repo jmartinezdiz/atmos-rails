@@ -1,0 +1,21 @@
+en:
+  activerecord:
+    models:
+      country_political_division:
+        one: "Country political division"
+        other: "Country political divisions"
+    attributes:
+      country_political_division:
+        country: "Country"
+        country_political_division_type: "Division yype"
+        higher_country_political_division: "Higher division"
+        code: "Code"
+        name_en: "Name (english)"
+        name_es: "Name (spanish)"
+    errors:
+      models:
+        country_political_division:
+          attributes:
+            base:
+              country_relations_not_match: "Any relation have distinct country"
+              higher_country_political_division_type_relations_not_match: "Higher country political division types not match"

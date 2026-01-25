@@ -1,0 +1,5 @@
+%h2= I18n.t("views.home.text.select_country")
+%ul.custom-list
+  - @countries.each do |country|
+    %li
+      = link_to country.name, country_path(country)

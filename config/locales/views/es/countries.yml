@@ -1,0 +1,6 @@
+es:
+  views:
+    countries:
+      text:
+        show_text: "Estás en %{location}"
+        select_political_division: "Selecciona tu %{name}:"

@@ -1,0 +1,27 @@
+!!! 5
+%html
+  %head
+    %title= content_for(:title) || I18n.t("views.app.title")
+    %meta{name: "viewport", content: "width=device-width,initial-scale=1"}
+    %meta{name: "application-name", content: I18n.t("views.app.title")}
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = yield :head
+
+    %link{rel: "icon", href: "/icon.png", type: "image/png"}
+    %link{rel: "icon", href: "/icon.svg", type: "image/svg+xml"}
+
+    %link{rel: "stylesheet", href: "/stylesheets/layout/application.css"}
+    %link{rel: "stylesheet", href: "/stylesheets/layout/error.css"}
+
+  %body
+    .body-container
+      .body-header
+        %h1
+          = link_to root_path do
+            ⛅
+            = I18n.t("views.app.title")
+
+      .body-content
+        = yield

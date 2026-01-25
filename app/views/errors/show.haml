@@ -1,0 +1,8 @@
+.error-page
+  .error-code= code
+  %h2.error-title= I18n.t("views.errors.#{error}.title")
+  %p.error-description= I18n.t("views.errors.#{error}.description")
+  .error-actions
+    = link_to root_path, class: "btn-home" do
+      %span 🏠
+      = I18n.t("views.app.title")

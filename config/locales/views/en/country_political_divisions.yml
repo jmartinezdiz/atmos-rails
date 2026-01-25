@@ -1,0 +1,13 @@
+en:
+  views:
+    country_political_divisions:
+      show_forecast:
+        title: "Forecast"
+        max_temperature: "Max."
+        min_temperature: "Min."
+        wind: "Wind"
+        rain: "Rain"
+        no_data: "No data"
+        previous_week: "Previous week"
+        next_week: "Next week"
+        date_format: "%d %b %Y"

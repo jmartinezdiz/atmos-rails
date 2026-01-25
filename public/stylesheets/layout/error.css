@@ -1,0 +1,58 @@
+.error-page {
+  text-align: center;
+  padding: 0px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.error-page .error-code {
+  font-size: 8rem;
+  font-weight: 800;
+  color: #e74c3c;
+  line-height: 1;
+  margin-bottom: 20px;
+  text-shadow: 2px 4px 10px rgba(231, 76, 60, 0.2);
+  letter-spacing: -2px;
+}
+
+.error-page .error-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 16px;
+}
+
+.error-page .error-description {
+  font-size: 1.2rem;
+  color: #718096;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.error-page .error-actions {
+  margin-top: 30px;
+}
+
+.error-page .btn-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background-color: #667eea;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 14px 0 rgba(102, 126, 234, 0.39);
+}
+
+.error-page .btn-home:hover {
+  background-color: #5a67d8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.23);
+  color: white;
+  text-decoration: none;
+}

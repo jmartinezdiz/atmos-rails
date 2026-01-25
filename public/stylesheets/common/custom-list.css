@@ -1,0 +1,33 @@
+.custom-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.custom-list a {
+  display: block;
+  padding: 25px 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+}
+
+.custom-list a:hover {
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+
+  .custom-list {
+    grid-template-columns: 1fr;
+  }
+
+}

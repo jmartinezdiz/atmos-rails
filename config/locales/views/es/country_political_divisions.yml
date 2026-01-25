@@ -1,0 +1,13 @@
+es:
+  views:
+    country_political_divisions:
+      show_forecast:
+        title: "Pronóstico"
+        max_temperature: "Máx."
+        min_temperature: "Mín."
+        wind: "Viento"
+        rain: "Lluvia"
+        no_data: "Sin datos"
+        previous_week: "Semana anterior"
+        next_week: "Semana siguiente"
+        date_format: "%d %b %Y"

@@ -1,0 +1,5 @@
+en:
+  views:
+    app:
+      title: "Atmos"
+      description: "Your forecast application"

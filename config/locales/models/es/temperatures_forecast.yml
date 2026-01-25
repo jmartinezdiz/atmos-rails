@@ -1,0 +1,13 @@
+es:
+  activerecord:
+    models:
+      temperatures_forecast:
+        one: "Pronóstico de temperaturas"
+        other: "Pronósticos de temperaturas"
+    attributes:
+      temperatures_forecast:
+        country_political_division: "División política"
+        date: "Fecha"
+        measurement_unit: "Unidad"
+        max_value: "Valor máximo"
+        min_value: "Valor mínimo"

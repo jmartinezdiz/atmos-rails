@@ -1,0 +1,12 @@
+es:
+  activerecord:
+    models:
+      wind_forecast:
+        one: "Pronóstico de viento"
+        other: "Pronósticos de viento"
+    attributes:
+      wind_forecast:
+        country_political_division: "División política"
+        date: "Fecha"
+        measurement_unit: "Unidad"
+        value: "Valor"

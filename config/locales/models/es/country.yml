@@ -1,0 +1,11 @@
+es:
+  activerecord:
+    models:
+      country:
+        one: "País"
+        other: "Países"
+    attributes:
+      country:
+        alpha3_code: "Código ISO 3"
+        name_en: "Nombre (inglés)"
+        name_es: "Nombre (español)"

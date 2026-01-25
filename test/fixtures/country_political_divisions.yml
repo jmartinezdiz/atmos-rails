@@ -1,0 +1,23 @@
+madrid_comunidad:
+  country: spain
+  country_political_division_type: spain_comunidad
+  higher_country_political_division: null
+  code: MD
+  name_en: Community of Madrid
+  name_es: Comunidad de Madrid
+
+madrid_provincia:
+  country: spain
+  country_political_division_type: spain_provincia
+  higher_country_political_division: madrid_comunidad
+  code: M
+  name_en: Madrid
+  name_es: Madrid
+
+madrid_capital:
+  country: spain
+  country_political_division_type: spain_municipio
+  higher_country_political_division: madrid_provincia
+  code: MAD
+  name_en: Madrid City
+  name_es: Madrid Ciudad

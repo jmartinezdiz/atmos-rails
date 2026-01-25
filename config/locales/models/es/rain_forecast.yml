@@ -1,0 +1,12 @@
+es:
+  activerecord:
+    models:
+      rain_forecast:
+        one: "Pronóstico de lluvia"
+        other: "Pronósticos de lluvia"
+    attributes:
+      rain_forecast:
+        country_political_division: "División política"
+        date: "Fecha"
+        measurement_unit: "Unidad"
+        value: "Valor"

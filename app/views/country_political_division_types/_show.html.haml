@@ -1,0 +1,6 @@
+%h2= I18n.t("views.countries.text.show_text", location: link_to(country_political_division_type.country.name, country_path(country_political_division_type.country))).html_safe
+%h2= I18n.t("views.countries.text.select_political_division", name: country_political_division_type.name)
+%ul.custom-list
+  - country_political_division_type.country_political_divisions.order(:"name_#{I18n.locale}").each do |country_political_division|
+    %li
+      = link_to country_political_division.name, political_division_country_path(country_political_division.country, political_division_id: country_political_division)

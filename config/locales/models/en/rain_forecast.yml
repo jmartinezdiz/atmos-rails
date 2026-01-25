@@ -1,0 +1,12 @@
+en:
+  activerecord:
+    models:
+      rain_forecast:
+        one: "Rain forecast"
+        other: "Rain forecasts"
+    attributes:
+      rain_forecast:
+        country_political_division: "Political division"
+        date: "Date"
+        measurement_unit: "Unit"
+        value: "Value"

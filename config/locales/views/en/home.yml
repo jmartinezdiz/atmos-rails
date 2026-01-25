@@ -1,0 +1,5 @@
+en:
+  views:
+    home:
+      text:
+        select_country: "Select your Country:"

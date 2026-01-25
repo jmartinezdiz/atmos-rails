@@ -1,0 +1,19 @@
+require_relative "boot"
+
+require "rails"
+require "active_model/railtie"
+require "active_record/railtie"
+require "action_controller/railtie"
+require "action_view/railtie"
+require "rails/test_unit/railtie"
+
+Bundler.require(*Rails.groups)
+
+module Atmos
+  class Application < Rails::Application
+    config.load_defaults 8.1
+    config.autoload_lib(ignore: %w[assets tasks])
+    config.generators.system_tests = nil
+    config.active_record.belongs_to_required_by_default = false
+  end
+end

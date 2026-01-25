@@ -1,0 +1,12 @@
+en:
+  activerecord:
+    models:
+      wind_forecast:
+        one: "Wind forecast"
+        other: "Wind forecasts"
+    attributes:
+      wind_forecast:
+        country_political_division: "Political division"
+        date: "Date"
+        measurement_unit: "Unit"
+        value: "Value"

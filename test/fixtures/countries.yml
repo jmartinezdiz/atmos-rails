@@ -1,0 +1,9 @@
+spain:
+  alpha3_code: ESP
+  name_en: Spain
+  name_es: España
+
+france:
+  alpha3_code: FRA
+  name_en: France
+  name_es: Francia

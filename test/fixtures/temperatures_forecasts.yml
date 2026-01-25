@@ -1,0 +1,13 @@
+one:
+  country_political_division: madrid_provincia
+  date: <%= Date.today %>
+  measurement_unit: C
+  max_value: 25.0
+  min_value: 15.0
+
+two:
+  country_political_division: madrid_provincia
+  date: <%= Date.tomorrow %>
+  measurement_unit: C
+  max_value: 28.0
+  min_value: 18.0
