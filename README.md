@@ -25,7 +25,7 @@ This repository is designed for educational purposes, allowing students to ident
 
 ```bash
 git clone https://github.com/jmartinezdiz/atmos-rails.git
-cd atmos
+cd atmos-rails
 ```
 
 ### 2. Setup
